@@ -1,0 +1,36 @@
+<div  class = 'panel'>
+
+
+
+    <table class ='table'>
+        <tr>
+            <th>Title</th>
+            <th>Actor</th>
+            <th>ReleaseDate</th>
+            <th>Director</th>
+            <th>Genre</th>
+
+        </tr>
+        <tr>
+            <td>{{Movie.Title}}</td>
+            <td>{{Movie.Actor}}</td>
+            <td>{{Movie.ReleaseYear}}</td>
+            <td>{{Movie.Director}}</td>
+            <td>{{Movie.Genre}}</td>
+
+
+        </tr>
+
+    </table>
+
+
+    <div class = 'panel-body'>
+
+        <button type = 'button' class = 'btn btn-primary'><a ui-sref = 'EditMovie({id:Movie._id})' class="btn btn-default">EditMovie </a></button>
+    </div>
+
+
+
+
+
+</div>
