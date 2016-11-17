@@ -2,7 +2,7 @@
 Single Page Application- Authenticated User can perform CRUD operation on Database
 
 # Documentation
-1.Run the server.js 
+1.Run the server.js  </br>
 2.HomePage: url - http://localhost:3500/MovieDatabase</br>
 3.Directed to the Login View</br>
 4.If Registered Enter the Credentials else Register yourself first</br>
