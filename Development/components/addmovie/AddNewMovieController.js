@@ -2,27 +2,22 @@
 
 MovieController - Serving  the Movie data from the Client to the Server
 Navigation Stopped on Invalid/Incomplete Form
-
  */
 angular.module('AddMovie', [])
     .controller('AddNewMovieController', function($scope,$rootScope, resourceFactory, $modal , $state){
-
         var modal = $modal({scope: $scope, templateUrl: '/components/edit/editMovieModal.html', show: false});
         $scope.$watch('Movie.$dirty', function(dirty){
 
        if(dirty){
            $rootScope.preventNavigation = true;
        }
-
-        else {
+       else {
            $rootScope.preventNavigation= false;
        }
 
-
     })
     $scope.data  = {};
-    
-  $scope.getError = function(error){
+        $scope.getError = function(error){
       if(angular.isDefined(error)){
           if(error.required){
               return 'Please Add a Value'
@@ -30,7 +25,6 @@ angular.module('AddMovie', [])
           else if(error.email){
               return 'Enter a Validd Email'
           }
-
       }
   }
     
@@ -40,18 +34,14 @@ angular.module('AddMovie', [])
         resourceFactory.save($scope.newMovie , function(){
             $scope.data = {};
             modal.$promise.then(modal.show);
-
         })
 
-        
     }
-        $scope.GoHome = function(){
+
+    $scope.GoHome = function(){
             modal.$promise.then(modal.hide);
             $state.go('home')
 
-
         }
 
-
-    
 });
