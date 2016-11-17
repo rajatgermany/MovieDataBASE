@@ -135,7 +135,6 @@ describe('movie', function() {
                         res.body.should.have.property('Actor');
                         res.body.should.have.property('_id').eql(String(movie._id));
                         done()
-
                     })
             })
         })

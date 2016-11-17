@@ -11,6 +11,5 @@ factory('GetTokenFactory', function(){
             return false
         }
     }
-
-        return Factory;
+    return Factory;
 })

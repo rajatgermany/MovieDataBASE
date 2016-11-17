@@ -4,19 +4,13 @@
 var app = angular.module('homeApp', []);
 app.directive('rajat', function(){
 
-
-
     return {
-
-
         restrict : 'E',
         scope : {
             data : '='
         },
         link : function(scope, elem, attrs){
 
-
-            console.log(attrs['data'])
         },
         template : '<input type = "text" ng-model = "data">'
     }

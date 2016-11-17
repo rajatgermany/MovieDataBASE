@@ -97,7 +97,6 @@ router.put('/movies/:id', function(req,res){
             if (req.body.Director) user.Director = req.body.Director;
             if (req.body.Genre) user.Genre = req.body.Genre;
             return resolve('Updated')
-
         })
     }
     movie.findById(req.params.id, function (err, user) {
@@ -113,8 +112,6 @@ router.put('/movies/:id', function(req,res){
             })
         })
     });
-
-
 
 });
 

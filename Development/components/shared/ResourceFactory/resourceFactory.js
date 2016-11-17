@@ -6,7 +6,6 @@ angular.module('navBar')
             var Token = $localStorage.newToken;
             return {'Authorization': Token}
         }
-
         var headers = getUserFromToken();
         // Assemble actions with custom headers attached
         var actions = {
@@ -18,8 +17,6 @@ angular.module('navBar')
             'delete': {method: 'DELETE', headers: headers},
             'update': {method: 'PUT', headers: headers}
         };
-
         var Movies = $resource('/api/movies/:id', {id: '@id'}, actions);
-
         return Movies;
     }]);

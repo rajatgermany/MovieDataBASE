@@ -4,7 +4,6 @@ angular.module('AuthenticationApp').
 controller('AuthenticationController', ["$scope", "$rootScope", "RegisterFactory", "LoginFactory", "$state", "$localStorage",'$alert', function($scope,$rootScope ,RegisterFactory,LoginFactory,$state, $localStorage, $alert)
 
 {
-
     $scope.RegisterUser = function(user) {
         $scope.newUser = new RegisterFactory();
         $scope.newUser.data = user ;

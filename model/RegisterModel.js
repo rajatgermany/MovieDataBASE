@@ -7,8 +7,6 @@ var RegisterSchema = Schema({
     Email : String ,
     Password : String,
     Token : String
-
-
 })
 
 module.exports = mongoose.model('Register', RegisterSchema);

@@ -19,7 +19,6 @@ router.post('/signup', function(req,res){
             Name: req.body.data.Name,
             Email: req.body.data.Email,
             Password: req.body.data.Password
-
         })
 
         newUser.save(function (err, docs) {
@@ -30,7 +29,6 @@ router.post('/signup', function(req,res){
         });
 
     }
-
     else {
         var err = new Error('NotFound')
         errorHandling(err, req, res)
@@ -45,7 +43,6 @@ router.post('/signup', function(req,res){
  */
 
 router.post('/login', function(req,res){
-
     User.findOne({Email:req.body.LoginData.Email}, function(err,user){
         if(!user){
             res.json({success:false , message : 'Authentication failed ! No Email Exists'})

@@ -5,7 +5,6 @@ var app = angular.module('MovieApp', ['navBar','ui.router', 'AuthenticationApp' 
     'mgcrea.ngStrap' , 'mgcrea.ngStrap.alert', 'mgcrea.ngStrap.aside']);
 
 
-
 // Checks the State and Prevent Navigation if USER not authenticated
  app.run(['GetTokenFactory','$localStorage', '$rootScope', '$state' , '$alert','$location',function(GetTokenFactory,$localStorage,$rootScope,$state, $alert, $location ){
      $rootScope.preventNavigation = false;
@@ -60,8 +59,6 @@ app.config(["$stateProvider", "$urlRouterProvider", function($stateProvider, $ur
         templateUrl: 'components/Authentication/LoginView.html',
         controller : 'AuthenticationController',
         authenticate : false
-
-
 
     })
 

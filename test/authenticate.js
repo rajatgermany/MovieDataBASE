@@ -89,7 +89,6 @@ describe('check registration', function(done){
         })
 
 
-
     it('App should register a user if all fields present', function(done){
 
         var user = {

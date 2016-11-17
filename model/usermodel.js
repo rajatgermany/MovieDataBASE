@@ -8,8 +8,6 @@ var MovieSchema = Schema({
     Director :  String,
     Actor : String ,
     Genre: String
-
-
 })
 
 module.exports = mongoose.model('Movie', MovieSchema);

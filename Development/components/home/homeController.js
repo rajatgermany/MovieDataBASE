@@ -14,7 +14,5 @@ angular.module('homeApp', [])
                     $alert({title: 'Movie Deleted', placement: 'top', type: 'info', show: true});
                 });
             })
-
-
         };
     }]);

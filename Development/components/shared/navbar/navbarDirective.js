@@ -8,15 +8,12 @@ angular.module('navBar', [])
             link: function (scope, elem, attrs) {
                 scope.Logout = function () {
                     if (!confirm('Are you sURE')) {
-
                         $state.go('home')
                     }
                     else {
                         delete $localStorage.newToken;
-
                         $alert({title: 'Please Login', placement: 'bottom', type: 'danger', show: true});
                         $state.go('Login')
-
                     }
                 }
             }
