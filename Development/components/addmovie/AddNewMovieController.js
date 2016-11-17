@@ -5,17 +5,9 @@ Navigation Stopped on Invalid/Incomplete Form
  */
 angular.module('AddMovie', [])
     .controller('AddNewMovieController', function($scope,$rootScope, resourceFactory, $modal , $state){
-        var modal = $modal({scope: $scope, templateUrl: '/components/edit/editMovieModal.html', show: false});
-        $scope.$watch('Movie.$dirty', function(dirty){
+        var modal = $modal({scope: $scope, templateUrl: '/components/addmovie/addNewMovieModal.html', show: false});
+        console.log('shshs')
 
-       if(dirty){
-           $rootScope.preventNavigation = true;
-       }
-       else {
-           $rootScope.preventNavigation= false;
-       }
-
-    })
     $scope.data  = {};
         $scope.getError = function(error){
       if(angular.isDefined(error)){
