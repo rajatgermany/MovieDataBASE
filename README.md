@@ -1,5 +1,5 @@
 # MovieDataBase
-#Single Page Application- Authenticated User can perform CRUD operation on Database
+Single Page Application- Authenticated User can perform CRUD operation on Database
 
 # Documentation
 Run the server.js 
