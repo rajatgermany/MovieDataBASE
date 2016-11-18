@@ -108,7 +108,7 @@ The watch gulp task will monitor the source files  in the Development Folder and
 
 
 # Test
--cd Test
+- cd Test
 - mocha
 
 # User Manual
