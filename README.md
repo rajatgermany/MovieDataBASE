@@ -1,5 +1,6 @@
 # MovieDataBase
-### Single Page Application- Authenticated User can perform CRUD operation on Database
+### It is also a Single Page Mean  stack  application with  Rest API thoroughly  protected using the Token authentication
+This application is storehouse of the movie information . It is a data driven application where user create  saves the movie information in the  database, In this application unit test for the rest api are also included.
 ## Stack
 
 * Persistence store: [MongoDB](http://www.mongodb.org/)
