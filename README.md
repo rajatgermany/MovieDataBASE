@@ -68,7 +68,7 @@ The app made up of a number of javascript, css and html files that need to be me
 * Run the server
 
     ```
-    node app.js
+    node server.js
     ```
 * Browse to the application at [http://localhost:3500/MovieDataBase]
 
