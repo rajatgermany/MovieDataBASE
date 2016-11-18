@@ -1,13 +1,11 @@
 
-
 <div  class = 'panel'>
+    <br>
+    <br>
 
 
-    <div class = 'col-xs-3'>
-
-    </div>
-
-    <table ng-show = 'a.length !=0' class ='table'>
+    <div class = 'col-xs-8' class = 'table-responsive'>
+    <table ng-show = 'a.length !=0' class ='table table-hover' style="margin-left : 120px">
               <tr>
                   <th>Title</th>
                   <th>Actor</th>
@@ -19,18 +17,15 @@
                     <td>{{i.Actor}}</td>
                     <td>{{i.ReleaseYear}}</td>
 
-                    <th><span><button type = 'button' class = 'btn btn-primary'><a ui-sref = 'viewMovie({id:i._id})' class="btn btn-default">View</a></button>
-                        <button type = 'button' ng-click = 'DeleteMovie(i._id)' class = 'btn btn-danger'>Delete </button> </span>
+                    <th><span><button type = 'button' class = 'btn btn-primary btn-sm'><a ui-sref = 'viewMovie({id:i._id})' class="btn btn-default">View</a></button>
+                        <button type = 'button' ng-click = 'DeleteMovie(i._id)' class = 'btn btn-danger btn-sm'>Delete </button> </span>
                     </th>
                 </tr>
-
             </table>
-
-
     <div ng-show ='a.length == 0'class = 'well'>
         <h1 style="text-align: center" >No Movies to Show ! Add New Movies</h1>
     </div>
 </div>
 
-
+</div>
 

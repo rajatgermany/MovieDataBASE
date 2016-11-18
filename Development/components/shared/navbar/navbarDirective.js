@@ -8,6 +8,7 @@ angular.module('navBar', [])
             link: function (scope, elem, attrs) {
                 scope.Logout = function () {
                     if (!confirm('Are you sURE')) {
+                        $alert({title: 'Continue playing', placement: 'bottom', type: 'danger', show: true});
                         $state.go('home')
                     }
                     else {

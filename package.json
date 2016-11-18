@@ -20,5 +20,16 @@
     "gulp": "^3.9.1",
     "gulp-ng-annotate": "^2.0.0",
     "supertest": "^2.0.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajatgermany/MovieDatabase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rajatgermany/MovieDatabase/issues"
+  },
+  "homepage": "https://github.com/rajatgermany/MovieDatabase#readme"
 }
