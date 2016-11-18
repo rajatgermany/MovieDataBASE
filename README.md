@@ -46,7 +46,7 @@ Our backend application server is a NodeJS application that relies upon some 3rd
     npm install
     ```
 
-  (This will install the dependencies declared in the server/package.json file)
+  (This will install the dependencies declared in the package.json file)
 
 ### Client App
 
@@ -70,7 +70,7 @@ The app made up of a number of javascript, css and html files that need to be me
     ```
     node app.js
     ```
-* Browse to the application at [http://localhost:3500/sportscart]
+* Browse to the application at [http://localhost:3500/MovieDataBase]
 
 
 ## Browser Support
