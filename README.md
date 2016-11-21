@@ -7,7 +7,7 @@ This application is storehouse of the movie information . It is a data driven ap
 * Backend: [Node.js](http://nodejs.org/)
 * Awesome [AngularJS](http://www.angularjs.org/) on the client
 * CSS based on [Twitter's bootstrap](http://getbootstrap.com/)
-* Rest Api (TokenBasedAuthentication)
+* Rest Api (**TokenBasedAuthentication)
 
 ### Build
 
